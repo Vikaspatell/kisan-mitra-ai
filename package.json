@@ -1,0 +1,29 @@
+{
+  "name": "kisan-mitra-ai",
+  "version": "1.0.0",
+  "description": "Kisan Mitra AI - Farmer-focused AI copilot, weather, mandi prices, and government schemes platform",
+  "scripts": {
+    "install:all": "npm.cmd install && cd server && npm.cmd install && cd ../client && npm.cmd install",
+    "server": "cd server && npm.cmd run dev",
+    "client": "cd client && npm.cmd run dev",
+    "dev": "concurrently -k -p \"[{name}]\" -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm.cmd run server\" \"npm.cmd run client\"",
+    "build": "cd server && npm.cmd run build && cd ../client && npm.cmd run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "agriculture",
+    "farmer",
+    "kisan",
+    "mandi-prices",
+    "weather",
+    "government-schemes",
+    "ai-copilot",
+    "react",
+    "express",
+    "postgresql"
+  ],
+  "author": "Kisan Mitra Team",
+  "license": "ISC"
+}
